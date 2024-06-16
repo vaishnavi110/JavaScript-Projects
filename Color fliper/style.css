@@ -1,0 +1,22 @@
+
+body{
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background-color:#f5e8ba;
+   text-align: center;
+}
+h1{
+    color:black;
+    letter-spacing: 1px;
+}
+button{
+    margin-top:20px;
+    border-radius: 4px;
+    height: 44px;
+    font-weight: 600;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    border: none;
+    color: white;
+    background-color:black;
+}

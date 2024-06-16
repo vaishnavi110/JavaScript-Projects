@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color fliper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+        <h1>Color fliper</h1>
+        <div>
+            <button class="btn" type="submit">Click Here</button>
+        </div>
+        <script>
+            
+            document.querySelector('.btn').addEventListener('click',function(){
+                let color="#";
+                const HexadecimalVal='ABCDEF0123456789';
+                for(let i=0;i<6;i++)
+                {
+                    color=color+HexadecimalVal[Math.floor(Math.random()*16)];
+                }
+                document.body.style.backgroundColor=color;
+       
+            });
+        </script>
+    
+</body>
+</html>
