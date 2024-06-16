@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Palindrome checker</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Palindrome Cheker</h1>
+        <div class="inputdiv"></div>
+        <input type="text" id="input" placeholder="Enter sentense.">
+        <div>
+            <button type="submit" onclick="isPalindrome()">Check </button>
+        </div>
+        <div id="result">
+
+        </div>
+        <script>
+            function isPalindrome(){
+                let sentense=document.getElementById("input").value;
+                let re = /[^a-zA-Z0-9]/g;
+                let lowRegStr = sentense.toLowerCase().replace(re, '');
+                let reverseStr = lowRegStr.split('').reverse().join(''); 
+                console.log(lowRegStr);
+                console.log(reverseStr);
+                if(lowRegStr===reverseStr)
+                    return result.innerHTML="Given Sentense is plaindrome!";
+                else
+                    return result.innerHTML="Given Sentense is not plaindrome!";
+            }
+        </script>
+</body>
+
+</html>
+
